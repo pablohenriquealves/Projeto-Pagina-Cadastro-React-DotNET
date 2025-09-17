@@ -167,3 +167,4 @@ C:\Projetos\paginaCadastroReact.NET\paginacadastrobackend\CadastroApi\obj\Debug\
 C:\Projetos\paginaCadastroReact.NET\paginacadastrobackend\CadastroApi\obj\Debug\net8.0\CadastroApi.pdb
 C:\Projetos\paginaCadastroReact.NET\paginacadastrobackend\CadastroApi\obj\Debug\net8.0\CadastroApi.genruntimeconfig.cache
 C:\Projetos\paginaCadastroReact.NET\paginacadastrobackend\CadastroApi\obj\Debug\net8.0\ref\CadastroApi.dll
+C:\Projetos\paginaCadastroReact.NET\paginacadastrobackend\CadastroApi\obj\Debug\net8.0\CadastroApi.sourcelink.json
