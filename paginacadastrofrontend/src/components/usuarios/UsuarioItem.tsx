@@ -8,7 +8,6 @@ interface UsuarioItemProps {
 }
 
 const UsuarioItem: React.FC<UsuarioItemProps> = ({ usuario, onEditar, onExcluir }) => {
-  // Formata a data para exibição amigável
   const formatarData = (dataString?: string) => {
     if (!dataString) return '-';
     const data = new Date(dataString);

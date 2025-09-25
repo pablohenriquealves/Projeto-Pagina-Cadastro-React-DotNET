@@ -1,0 +1,32 @@
+.form-group {
+  background-color: #720e9e;
+  color: white;
+  padding: 15px;
+  margin-bottom: 15px;
+}
+
+.form-control {
+  background-color: #720e9e !important;
+  color: white !important;
+  border: 1px solid white;
+}
+
+.form-control:focus {
+  background-color: #720e9e !important;
+  color: white !important;
+  border-color: white;
+  box-shadow: 0 0 0 0.25rem rgba(255, 255, 255, 0.25);
+}
+
+.modal-content {
+  background-color: #720e9e !important;
+  color: white !important;
+}
+
+label {
+  color: white;
+}
+
+.form-control::placeholder {
+  color: rgba(255, 255, 255, 0.7) !important;
+}

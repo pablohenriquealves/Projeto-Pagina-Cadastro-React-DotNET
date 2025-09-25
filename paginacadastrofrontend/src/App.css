@@ -1,3 +1,7 @@
+body {
+  background-color: black;
+}
+
 .App {
   text-align: center;
 }
@@ -37,10 +41,6 @@
   }
 }
 
-
-
-/* ESTILO ADICIONADO */
-
 .app-container {
   max-width: 1200px;
   margin: 0 auto;
@@ -59,7 +59,7 @@
   background-color: #f8f9fa;
   padding: 20px;
   border-radius: 5px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .table-responsive {
@@ -70,13 +70,11 @@
   margin-bottom: 20px;
 }
 
-/* Estilos para os botões de ação */
 .btn-sm {
   padding: 0.25rem 0.5rem;
   font-size: 0.875rem;
 }
 
-/* Espaçamento entre ícones e texto */
 .bi {
   margin-right: 0.25rem;
 }

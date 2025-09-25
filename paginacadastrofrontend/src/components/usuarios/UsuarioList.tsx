@@ -34,17 +34,16 @@ const UsuarioList = () => {
     }
   };
 
-  // Função para editar usuário
   const handleEditar = (usuario: Usuario) => {
     setEditando(usuario);
     setShowForm(true);
   };
 
   return (
-    <div>
-      <h2>Usuários Cadastrados</h2>
+    <div className="background-purple">
+      <h2 className="textcolor-white ms-1">Usuários Cadastrados</h2>
       <button
-        className="btn btn-primary"
+        className="btn btn-light ms-1"
         onClick={() => {
           setEditando(null);
           setShowForm(true);
@@ -73,6 +72,7 @@ const UsuarioList = () => {
               <th>Email</th>
               <th>Telefone</th>
               <th>Data Nascimento</th>
+              <th>Data Alteração</th>
               <th>Ações</th>
             </tr>
           </thead>
@@ -85,7 +85,6 @@ const UsuarioList = () => {
                 onExcluir={() => handleDelete(usuario.id)}
               />
             ))}
-            {/* ...existing code... */}
           </tbody>
         </table>
       </div>

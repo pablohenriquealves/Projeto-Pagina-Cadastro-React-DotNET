@@ -6,7 +6,6 @@ const api = axios.create({
   baseURL: API_BASE_URL,
 });
 
-// Adiciona um interceptor para mostrar mais detalhes dos erros
 api.interceptors.response.use(
   (response) => response,
   (error) => {
@@ -43,22 +42,18 @@ export const createUsuario = async (
 };
 
 export const updateUsuario = async (id: number, usuario: Partial<Usuario>): Promise<Usuario> => {
-  // Limpa os campos vazios e formata os dados
   const dadosLimpos: Partial<Usuario> = {};
 
   if (usuario.nome !== undefined) dadosLimpos.nome = usuario.nome.trim();
   if (usuario.email !== undefined) dadosLimpos.email = usuario.email.trim();
 
-  // Remove caracteres especiais do telefone (parênteses, espaços e traços)
   if (usuario.telefone !== undefined && usuario.telefone !== '') {
     dadosLimpos.telefone = usuario.telefone.replace(/[()\s-]/g, '');
   }
 
-  // Garante que a data está no formato correto (YYYY-MM-DD)
   if (usuario.dataNascimento !== undefined && usuario.dataNascimento !== '') {
     const data = new Date(usuario.dataNascimento);
     if (!isNaN(data.getTime())) {
-      // Ajusta para o timezone local antes de formatar
       const offset = data.getTimezoneOffset();
       const dataAjustada = new Date(data.getTime() - offset * 60 * 1000);
       dadosLimpos.dataNascimento = dataAjustada.toISOString().split('T')[0];
