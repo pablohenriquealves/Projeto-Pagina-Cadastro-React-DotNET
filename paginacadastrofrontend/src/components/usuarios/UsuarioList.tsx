@@ -76,7 +76,7 @@ const UsuarioList = () => {
               <th>Ações</th>
             </tr>
           </thead>
-          <tbody>
+          <tbody className="table table-dark">
             {usuarios.map((usuario) => (
               <UsuarioItem
                 key={usuario.id}

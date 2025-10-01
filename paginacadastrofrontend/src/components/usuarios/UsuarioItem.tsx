@@ -25,14 +25,14 @@ const UsuarioItem: React.FC<UsuarioItemProps> = ({ usuario, onEditar, onExcluir 
       <td>
         <div className="d-flex gap-2">
           <button
-            className="btn btn-sm btn-warning"
+            className="btn btn-sm btn-secondary"
             onClick={() => onEditar(usuario)}
             aria-label={`Editar ${usuario.nome}`}
           >
             <i className="bi bi-pencil"></i> Editar
           </button>
           <button
-            className="btn btn-sm btn-danger"
+            className="btn btn-sm btn-light"
             onClick={() => onExcluir(usuario.id)}
             aria-label={`Excluir ${usuario.nome}`}
           >
